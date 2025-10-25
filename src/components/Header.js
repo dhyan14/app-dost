@@ -28,11 +28,11 @@ const Header = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg">
+          <div className="flex items-center space-x-3 min-w-0 flex-shrink-0">
+            <div className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg flex-shrink-0">
               <Code className="w-6 h-6 text-white" />
             </div>
-            <span className="text-2xl font-bold gradient-text">AppDost</span>
+            <span className="text-xl sm:text-2xl font-bold gradient-text whitespace-nowrap">AppDost</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors flex-shrink-0 ml-4"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
