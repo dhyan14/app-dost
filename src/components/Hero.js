@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Zap, Users, Award, Globe, Smartphone, Code } from 'lucide-react';
+import { ArrowRight, Zap, Users, Award, Globe, Smartphone, Code } from 'lucide-react';
 
 const Hero = () => {
   const stats = [
@@ -28,16 +28,6 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-left"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="inline-flex items-center px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-8 max-w-full"
-            >
-              <Sparkles className="w-4 h-4 mr-2 flex-shrink-0" />
-              <span className="whitespace-nowrap sm:whitespace-normal text-center sm:text-left">Complete IT Solution Provider Since 2025</span>
-            </motion.div>
-
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
